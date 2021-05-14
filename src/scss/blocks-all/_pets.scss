@@ -1,0 +1,34 @@
+.pets__btn-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.pets__content-btn {
+  width: 52px;
+  height: 52px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: url(../../img/pets-btn.png) no-repeat center center;
+}
+
+.pets__content-btn:nth-child(2){
+  transform: rotateY(180deg);
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .pets__content-btn {
+    width: 52px;
+    height: 52px;
+    background: url(../../img/pets-btn@2x.png) no-repeat center center;
+  }
+
+}

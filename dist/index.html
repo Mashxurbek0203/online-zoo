@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.min.css">
+  <title>Online-Zoo</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="main-header__container container">
+      <a href="#" class="main-header__logo-link"><img src="./img/Logo.svg" alt="Logo" class="main-header__logo-img"></a>
+      <div class="main-header__inner">
+        <nav class="main-header__nav">
+          <ul class="main-header__nav-list">
+            <li class="main-header__nav-item"><a href="#" class="main-header__nav-link">About</a></li>
+            <li class="main-header__nav-item"><a href="#" class="main-header__nav-link">Map</a></li>
+            <li class="main-header__nav-item"><a href="#" class="main-header__nav-link">Zoos</a></li>
+            <li class="main-header__nav-item"><a href="#" class="main-header__nav-link">Contact Us</a></li>
+            <li class="main-header__nav-item"><a href="#" class="main-header__nav-link">Design</a></li>
+          </ul>
+        </nav>
+        <form method="GET" class="main-header__form">
+          <input type="text" placeholder="Search..." id="search" class="main-header__search">
+          <label for="search" class="main-header__search-label">
+            <button type="button" class="main-header__search-btn">
+            </button>
+          </label>
+        </form>
+        <button class="main-header__log-in" type="button">Log in</button>
+        <button class="main-header__sign-up" type="button">Sign up</button>
+        <span class="main-header__account-adaptive">My Account</span>
+        <button class="main-header__account-desktop" type="button"></button>
+      </div>
+      <button type="button" class="main-header__burger burger">
+        <span class="visually-hidden">menu</span>
+        <span class="burger__span"></span>
+      </button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__inner">
+          <p class="hero__header">Watch your favorite animals online</p>
+          <p class="hero__description">Observe different animals from around the world online in live time. Help
+            vulunteers to take a good care of animals, donate to your favorite ones.</p>
+          <div class="hero__link-container">
+            <a href="#" class="hero__link">Watch now</a>
+            <a href="#" class="hero__link donate">Donate</a>
+          </div>
+        </div>
+        <picture>
+          <source srcset="./img/hero-panda-lg.png 1x, ./img/hero-panda-lg@2x.png 2x">
+          <img src="./img/hero-panda-lg.png" alt="watch" class="hero__img">
+        </picture>
+      </div>
+    </section>
+    <section class="process">
+      <div class="process__container container">
+        <h2 class="process__header">How it works</h2>
+        <ul class="process__list">
+          <li class="process__item">
+            <p class="process__item-description">Keep an eye on your favourite animals online</p>
+          </li>
+          <li class="process__item">
+            <p class="process__item-description">Become a part of the communtity</p>
+          </li>
+          <li class="process__item">
+            <p class="process__item-description">Support animals with the donations</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="illustration"></section>
+    <section class="pets">
+      <div class="pets__container container">
+        <div class="pets__header-container">
+          <h2 class="pets__header"></h2>
+          <a href="" class="pets__header-link"></a>
+        </div>
+        <div class="pets__content">
+          <ul class="pets__list">
+            <li class="pets__item">
+              <img src="" alt="">
+              <div class="pets__content-inner">
+                <p class="pets__content-header"></p>
+                <p class="pets__content-description"></p>
+              </div>
+            </li>
+            <li class="pets__item">
+              <img src="" alt="">
+              <div class="pets__content-inner">
+                <p class="pets__content-header"></p>
+                <p class="pets__content-description"></p>
+              </div>
+            </li>
+            <li class="pets__item">
+              <img src="" alt="">
+              <div class="pets__content-inner">
+                <p class="pets__content-header"></p>
+                <p class="pets__content-description"></p>
+              </div>
+            </li>
+            <li class="pets__item">
+              <img src="" alt="">
+              <div class="pets__content-inner">
+                <p class="pets__content-header"></p>
+                <p class="pets__content-description"></p>
+              </div>
+            </li>
+            <li class="pets__item">
+              <img src="" alt="">
+              <div class="pets__content-inner">
+                <p class="pets__content-header"></p>
+                <p class="pets__content-description"></p>
+              </div>
+            </li>
+            <li class="pets__item">
+              <img src="" alt="">
+              <div class="pets__content-inner">
+                <p class="pets__content-header"></p>
+                <p class="pets__content-description"></p>
+              </div>
+            </li>
+          </ul>
+          <div class="pets__btn-container">
+            <button type="button" class="pets__content-btn"></button>
+            <button type="button" class="pets__content-btn"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="./js/main.js"></script>
+
+</html>

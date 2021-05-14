@@ -1,0 +1,166 @@
+.process__container {
+  margin-top: -131px;
+}
+
+.process__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.process__header{
+  font-family: 'Rubik';
+  font-size: 24px;
+  line-height: 28px;
+  color: #0d444d;
+  margin-bottom: 98px;
+  padding-top: 64px;
+  text-transform: uppercase;
+}
+
+.process__item-description{
+  font-size: 14px;
+  line-height: 20px;
+  color: #04444d;
+  padding: 0 40px 62px 46px;
+}
+
+.process__item-description::before {
+  content: '';
+  width: 145px;
+  height: 145px;
+  display: block;
+  background: url(../../img/binoculars.png) no-repeat center center #fff;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.06);
+  margin-bottom: 14px;
+}
+
+.process__item:nth-child(2) .process__item-description::before{
+  background: url(../../img/dog-paw.png) no-repeat center center #fff;
+} 
+.process__item:nth-child(3) .process__item-description::before{
+  background: url(../../img/trust.png) no-repeat center center #fff;
+} 
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .process__item-description::before {
+    background: url(../../img/binoculars@2x.png) no-repeat center center #fff;
+    background-size: 40px 40px;
+  }
+
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .process__item:nth-child(2).process__item-description::before {
+    background: url(../../img/dog-paw@2x.png) no-repeat center center #fff;
+  }
+
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .process__item:nth-child(3) .process__item-description::before {
+    background: url(../../img/trust@2x.png) no-repeat center center #fff;
+    background-size: 40px 40px;
+  }
+
+}
+.process__item {
+  min-width: 480px;
+  margin-right: 20px;
+  text-align: center;
+
+  &:last-child {
+    margin-right: unset;
+  }
+}
+
+@media screen and(max-width: 1611px){
+  .process__container {
+    margin-top: -18px;
+  }
+
+  .process__header {
+    padding-top: unset;
+    margin-bottom: 30px;
+  }
+  .process__list {
+    margin: 0 auto;
+  }
+  .process__item{
+    min-width: 365px;
+    max-width: 365px;
+  }  
+
+  .process__item-description {
+    padding: 0 43px 51px 45px;
+  }
+}
+
+@media screen and(max-width:1138px){
+  .process__container{ 
+    margin-top: -31px;
+  }
+
+  .process__item {
+    max-width: 187px;
+    min-width: 187px;
+    margin-right: 19px;
+  }
+
+  .process__item-description {
+    padding: 0 0 25px 0 ;
+
+    &::before {
+      width: 113px;
+      height: 113px;
+    }
+
+  }
+  .process__header {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+@media screen and(max-width: 600px){
+  .process__container {
+    margin-top: none;
+  }
+
+  .process__header {
+    padding-top: 32px;
+    margin-bottom: 20px;
+  }
+
+  .process__list{
+    flex-direction: column;
+  }
+
+  .process__item {
+    margin: 0 auto 24px auto !important;
+    &:last-child {
+      margin-bottom: none;
+    }
+  }
+}
