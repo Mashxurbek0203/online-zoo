@@ -9,7 +9,8 @@
   <title>Online-Zoo</title>
 </head>
 
-<body>
+<body class="body">
+  
   <header class="main-header">
     <div class="main-header__container container">
       <a href="#" class="main-header__logo-link"><img src="./img/Logo.svg" alt="Logo" class="main-header__logo-img"></a>
@@ -79,52 +80,72 @@
     <section class="pets">
       <div class="pets__container container">
         <div class="pets__header-container">
-          <h2 class="pets__header"></h2>
-          <a href="" class="pets__header-link"></a>
+          <h2 class="pets__header">Pets in zoo </h2>
+          <a href="" class="pets__header-link pets__main-link">Choose your Favorite</a>
         </div>
         <div class="pets__content">
           <ul class="pets__list">
             <li class="pets__item">
-              <img src="" alt="">
               <div class="pets__content-inner">
-                <p class="pets__content-header"></p>
-                <p class="pets__content-description"></p>
+                <p class="pets__content-header">Pandas</p>
+                <p class="pets__content-description">Shenshuping Gengda Panda Center</p>
               </div>
+              <picture>
+                <source media="(max-width: 600px)" srcset="./img/pets-panda_mob.png 1x, ./img/pets-panda_mob@2x.png 2x">
+                <source srcset="./img/pets-panda.png 1x, ./img/pets-panda@2x.png 2x">
+                <img src="./img/pets-panda.png" alt="panda" class="pets__content-img" title="Pandas">
+              </picture>
             </li>
             <li class="pets__item">
-              <img src="" alt="">
               <div class="pets__content-inner">
-                <p class="pets__content-header"></p>
-                <p class="pets__content-description"></p>
+                <p class="pets__content-header">Eagles</p>
+                <p class="pets__content-description">Catalina Island</p>
               </div>
+              <picture>
+                <source srcset="./img/pets-eagle.png 1x, ./img/pets-eagle@2x.png 2x">
+                <img src="./img/pets-eagle.png" alt="Eagles" class="pets__content-img" title="Eagles">
+              </picture>
             </li>
             <li class="pets__item">
-              <img src="" alt="">
               <div class="pets__content-inner">
-                <p class="pets__content-header"></p>
-                <p class="pets__content-description"></p>
+                <p class="pets__content-header">Gorillas</p>
+                <p class="pets__content-description">GRACE gorillas</p>
               </div>
+              <picture>
+                <source media="(max-width: 600px)" srcset="./img/gorilla_mob.png 1x, ./img/gorilla_mob@2x.png 2x">
+                <source srcset="./img/pets-gorilla.png 1x, ./img/pets-gorilla@2x.png 2x">
+                <img src="./img/pets-gorilla.png" alt="Gorillas" class="pets__content-img" title="Gorillas">
+              </picture>
             </li>
             <li class="pets__item">
-              <img src="" alt="">
               <div class="pets__content-inner">
-                <p class="pets__content-header"></p>
-                <p class="pets__content-description"></p>
+                <p class="pets__content-header">Aligators</p>
+                <p class="pets__content-description">St. Augustine's Alligator Farm Zoological Park</p>
               </div>
+              <picture>
+                <source srcset="./img/pets-aligator.png 1x, ./img/pets-aligator@2x.png 2x">
+                <img src="./img/pets-aligator.png" alt="Aligator" class="pets__content-img" title="Aligator">
+              </picture>
             </li>
             <li class="pets__item">
-              <img src="" alt="">
               <div class="pets__content-inner">
-                <p class="pets__content-header"></p>
-                <p class="pets__content-description"></p>
+                <p class="pets__content-header">Elephants</p>
+                <p class="pets__content-description">Tembe Elephant Park</p>
               </div>
+              <picture>
+                <source srcset="./img/pets-elephant.png 1x, ./img/pets-elephant@2x.png 2x">
+                <img src="./img/pets-elephant.png" alt="Elephants" class="pets__content-img" Elephants="">
+              </picture>
             </li>
             <li class="pets__item">
-              <img src="" alt="">
               <div class="pets__content-inner">
-                <p class="pets__content-header"></p>
-                <p class="pets__content-description"></p>
+                <p class="pets__content-header">Lemurs</p>
+                <p class="pets__content-description">Madagascar</p>
               </div>
+              <picture>
+                <source srcset="./img/pets-lemurs.png 1x, ./img/pets-lemurs@2x.png 2x">
+                <img src="./img/pets-lemurs.png" alt="Lemurs" class="pets__content-img">
+              </picture>
             </li>
           </ul>
           <div class="pets__btn-container">
@@ -132,6 +153,7 @@
             <button type="button" class="pets__content-btn"></button>
           </div>
         </div>
+        <a href="#" class="pets__footer-link pets__main-link">Choose your Favorite</a>
       </div>
     </section>
   </main>

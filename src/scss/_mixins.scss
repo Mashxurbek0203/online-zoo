@@ -1,0 +1,53 @@
+@mixin pets-item-header_lg {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2D2D2D;
+}
+
+@mixin pets-description_lg {
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 19px;
+  color: #919191;
+}
+
+
+@mixin pets-item-header_dt {
+  font-size: 16.5148px;
+  line-height: 19px;
+}
+
+@mixin pets-description_dt {
+  font-size: 12.8449px;
+  line-height: 15px;
+}
+
+@mixin section-titles-lg {
+  font-family: 'Rubik';
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #0D444D;
+}
+
+@mixin section-titles-sm {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+
+@mixin section-links_lg {
+  font-family: 'Roboto Mono';
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #19707D;
+}
+
+
+@mixin section-links_sm {
+  font-size: 14px;
+  line-height: 18px;
+}

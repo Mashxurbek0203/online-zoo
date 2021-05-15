@@ -12,9 +12,12 @@ a {
   text-decoration: none;
 }
 
-body {
+.body {
   font-family: 'Roboto';
-  overflow-x: hidden;
+}
+
+.body--active {
+  overflow: hidden;
 }
 
 .main {
