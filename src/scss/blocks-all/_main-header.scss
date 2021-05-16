@@ -310,4 +310,8 @@
     padding-top: 7px !important;
     padding-bottom: 5px !important;
   }
+
+  .main-header__inner--active{
+    height: calc(100vh - 53px);
+  }
 }

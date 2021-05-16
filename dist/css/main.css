@@ -307,7 +307,9 @@ a {
 @media screen and (max-width: 600px) {
   .main-header {
     padding-top: 7px !important;
-    padding-bottom: 5px !important; } }
+    padding-bottom: 5px !important; }
+  .main-header__inner--active {
+    height: calc(100vh - 53px); } }
 
 .visually-hidden {
   clip: rect(0 0 0 0);
@@ -1061,7 +1063,7 @@ a {
     top: unset;
     right: unset;
     transform: rotate(90deg) translateY(50%);
-    bottom: -52px; }
+    bottom: -63px; }
   .feed__item-description::before {
     margin-right: 35px;
     margin-left: 38px; }
