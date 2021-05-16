@@ -1,11 +1,11 @@
 .feed {
   background: url(../../img/feed-bg.png) no-repeat center center;
-  background-size: 100% 100%;
+  // transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
 .feed__container{
-  padding-top: 102px;
-  padding-bottom: 40px;
+  padding-top: 112px;
+  position: relative;
 }
 
 .feed__header-container{
@@ -17,6 +17,7 @@
 .feed__header {
   @include section-titles-lg;
   margin-right: auto;
+  color: #C5E1E5
 }
 
 .feed__main-btn {
@@ -40,15 +41,22 @@
 
 .feed__item {
   margin-right: 20px;
-  min-width: 480px;
-
+  max-width: 480px;
+  position: relative;
+  padding: 15px 40px 112px 46px;
   &:last-child{
     margin-right: unset;
   }
 }
 
-.feed__item-description {
-  padding: 15px 40px 112px 46px;
+.feed__item:not(:last-child)::after{
+  content: '';
+  width: 299px;
+  height: 52px;
+  position: absolute;
+  background: url(../../img/feed-arrow.png) no-repeat center center;
+  top: 25%;
+  right: -35%;
 }
 
 .feed__item-description {
@@ -59,6 +67,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 394px;
 }
 
 .feed__item-description::before {
@@ -72,7 +81,159 @@
   margin-bottom: 14px;
 }
 
+.feed__item:nth-child(2) .feed__item-description::before{
+  background: url(../../img/feed-trust.png) no-repeat center center #fff;
+} 
+
+.feed__item:nth-child(3) .feed__item-description::before{
+  background: url(../../img/healthy-animals.png) no-repeat center center #fff;
+}
+
+
 .feed__footer-btn{
   display: none;
+}
 
+@media screen and(max-width: 1611px){
+  .feed {
+    background:url(../../img/feed-bg.png) no-repeat center;
+  }
+
+  .feed__header-container {
+    margin-bottom: 39px;
+  }
+
+  .feed__header-btn {
+    letter-spacing: 0.5%;
+  }
+
+  .feed__item:not(:last-child)::after {
+    background: url(../../img/feed-arrow-sm.png) no-repeat center center;
+    width: 204px;
+    top: 18%;
+    right: -33%;
+  }
+
+  .feed__main-btn{
+    padding: 8px 50px;
+  }
+
+  .feed__item {
+    max-width: 367px;
+    padding: 0 0 158px 0;
+  }
+
+  .feed__item-description {
+    width: 100%;
+  }
+
+  .feed__item-description::before {
+    margin-right: 113px;
+    margin-left: 109px;
+    margin-bottom: 14px;
+  }
+
+}
+
+
+@media screen and(max-width: 1178px){
+  .feed {
+    background:url(../../img/feed-tablet-bg.png) no-repeat center center;
+  }
+  
+  .feed__header{
+    @include section-titles-sm;
+  }
+
+  .feed__container {
+    max-width: 575px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 48px;
+  }
+
+  .feed__item-description::before {
+    width: 113px;
+    height: 113px;
+    margin: 0 35px 8px 38px;
+  }
+
+  .feed__item {
+    text-align: center;
+    padding-bottom: 27px;
+  }
+
+  .feed__item:not(:last-child)::after {
+    background: url(../../img/feed-arrow-tab.png) no-repeat center center;
+    width: 52px;
+    right: -20%;
+    top: 25%;
+  }
+
+  .feed__header-container {
+    margin-bottom: 39px;
+  }
+}
+
+@media screen and(max-width: 600px){
+  .feed {
+    background: url(../../img/feed-mob-bg.png) no-repeat, url(../../img/feed-mob-bg-shadow.png) no-repeat, url(../../img/feed-mob-bg-shadow2.png) no-repeat;
+    background-position: left 19% top 20.31px, left 15% top, left 17% bottom;
+    margin-bottom: 32px;
+  }
+
+  .feed__header-container {
+    margin-bottom: 22.09px;
+  }
+
+  .feed__item-description  {
+    padding-bottom: 0;
+  }
+
+  .feed__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 49.71px;
+    padding-bottom: 91px;
+  }
+
+  .feed__header-btn {
+    display: none;
+  }
+
+  .feed__list {
+    margin-bottom: 52px;
+    flex-direction: column;
+  }
+
+  .feed__item {
+    padding: unset;
+    margin-right: unset;
+    max-width: 186px;
+  }
+
+  .feed__item:not(:last-child) {
+    margin-bottom: 74px;
+  }
+  
+  .feed__item:not(:last-child)::after {
+    top: unset;
+    right: unset;
+    transform: rotate(90deg) translateY(50%);
+    bottom: -52px;
+
+  }
+
+  .feed__item-description::before {
+    margin-right: 35px;
+    margin-left: 38px;
+  }
+
+  .feed__footer-btn {
+    display: block;
+    letter-spacing: -0.07em;
+    padding: 11px 65px 11px 65px;
+    align-self: center;
+    @include section-links_sm;
+  }
 }

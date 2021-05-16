@@ -95,10 +95,13 @@ only screen and (                min-resolution: 2dppx) {
   justify-content: center;
 }
 
-.pets__item {
+.pets__item-link{
   display: flex;
   align-items: center;
   flex-direction: column-reverse;
+}
+
+.pets__item {
   margin-right: 20px;
   background: #FFFFFF;
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
