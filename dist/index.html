@@ -15,13 +15,13 @@
     <div class="main-header__container container">
       <a href="#" class="main-header__logo-link"><img src="./img/Logo.svg" alt="Logo" class="main-header__logo-img"></a>
       <div class="main-header__inner">
-        <nav class="main-header__nav">
-          <ul class="main-header__nav-list">
-            <li class="main-header__nav-item"><a href="#" class="main-header__nav-link">About</a></li>
-            <li class="main-header__nav-item"><a href="#" class="main-header__nav-link">Map</a></li>
-            <li class="main-header__nav-item"><a href="#" class="main-header__nav-link">Zoos</a></li>
-            <li class="main-header__nav-item"><a href="#" class="main-header__nav-link">Contact Us</a></li>
-            <li class="main-header__nav-item"><a href="#" class="main-header__nav-link">Design</a></li>
+        <nav class="main-header__nav main-nav">
+          <ul class="main-header__nav-list main-nav__list">
+            <li class="main-header__nav-item main-nav__item"><a href="./missing-page.html" class="main-header__nav-link main-nav__link">About</a></li>
+            <li class="main-header__nav-item main-nav__item"><a href="./map.html" class="main-header__nav-link main-nav__link">Map</a></li>
+            <li class="main-header__nav-item main-nav__item"><a href="#" class="main-header__nav-link main-nav__link">Zoos</a></li>
+            <li class="main-header__nav-item main-nav__item"><a href="#" class="main-header__nav-link main-nav__link">Contact Us</a></li>
+            <li class="main-header__nav-item main-nav__item"><a href="#" class="main-header__nav-link main-nav__link">Design</a></li>
           </ul>
         </nav>
         <form method="GET" class="main-header__form">
@@ -82,7 +82,7 @@
       <div class="pets__container container">
         <div class="pets__header-container">
           <h2 class="pets__header">Pets in zoo </h2>
-          <a href="" class="pets__header-link pets__main-link">Choose your Favorite</a>
+          <button type="button" class="pets__header-link pets__main-link">Choose your Favorite</button>
         </div>
         <div class="pets__content">
           <ul class="pets__list">
@@ -109,7 +109,7 @@
                 </picture>
               </a>
             </li>
-            <li class="pets__item"><a href="#" class="pets__item-link">
+            <li class="pets__item"><a href="./" class="pets__item-link">
                 <div class="pets__content-inner">
                   <p class="pets__content-header">Gorillas</p>
                   <p class="pets__content-description">GRACE gorillas</p>
@@ -172,28 +172,189 @@
         </div>
         <ul class="feed__list">
           <li class="feed__item">
-              <div class="feed__item-inner">
-                <p class="feed__item-description">You donate to your favourite animals </p>
-              </div>
+            <div class="feed__item-inner">
+              <p class="feed__item-description">You donate to your favourite animals </p>
+            </div>
             
           </li>
           <li class="feed__item">
-              <div class="feed__item-inner">
-                <p class="feed__item-description">Zoo Keepers feed animals with their favourite food</p>
-              </div>
+            <div class="feed__item-inner">
+              <p class="feed__item-description">Zoo Keepers feed animals with their favourite food</p>
+            </div>
           </li>
           <li class="feed__item">
-              <div class="feed__item-inner">
-                <p class="feed__item-description">Animals are healthy and happy</p>
-              </div>
+            <div class="feed__item-inner">
+              <p class="feed__item-description">Animals are healthy and happy</p>
+            </div>
             
           </li>
         </ul>
         <button class="feed__footer-btn feed__main-btn">Donate to volunteers</button>
       </div>
     </section>
+    <section class="testimonials">
+      <h2 class="visually-hidden">Feedbacks</h2>
+      <div class="testimonials__container container">
+        <div class="testimonials__header-container">
+          <h2 class="testimonials__header">Testimonials</h2>
+          <button class="testimonials__header-btn testimonials__main-btn">Leave feedback</button>
+        </div>
+        <ul class="testimonials__list">
+          <li class="testimonials__item">
+            <div class="testimonials__item-text">
+              <p class="testimonials__item-date">20 Decepmer 2020</p>
+              <p class="testimonials__item-description">Awesome place to observe my favourite aligators at Florida, the
+                quality of the video is great. </p>
+            </div>
+            <div class="testimonials__item-author">
+              <p class="testimonials__item-info">
+                Adam, Spain
+              </p>
+              <picture>
+                <source srcset="./img/feedback-adam.png 1x, ./img/feedback-adam@2x.png 2x">
+                <img src="./img/feedback-adam.png" alt="" class="testimonials__item-img">
+              </picture>
+            </div>
+          </li>
+          <li class="testimonials__item">
+            <div class="testimonials__item-text ">
+              <p class="testimonials__item-date">20 Decepmer 2020</p>
+              <p class="testimonials__item-description">Awesome place to observe my favourite aligators at Florida, the
+                quality of the video is great. </p>
+            </div>
+            <div class="testimonials__item-author">
+              <p class="testimonials__item-info">
+                Chris, Australia
+              </p>
+              <picture>
+                <source srcset="./img/feedback-chris.png 1x, ./img/feedback-chris@2x.png 2x">
+                <img src="./img/feedback-chris.png" alt="" class="testimonials__item-img">
+              </picture>
+            </div>
+          </li>
+          <li class="testimonials__item">
+            <div class="testimonials__item-text ">
+              <p class="testimonials__item-date">20 Decepmer 2020</p>
+              <p class="testimonials__item-description">Awesome place to observe my favourite aligators at Florida, the
+                quality of the video is great. </p>
+            </div>
+            <div class="testimonials__item-author">
+              <p class="testimonials__item-info">
+                Amely, USA
+              </p>
+              <picture>
+                <source media="(max-width: 600px)" srcset="./img/feedback-amelymob.jpg 1x, ./img/feedback-amelymob.jpg 2x">
+                <source media="(max-width: 600px)" srcset="./img/feedback-amelymob.jpg">
+                <source media="(max-width: 1178px)" srcset="./img/feedback-amelytab.jpg 1x, ./img/feedback-amelytab.jpg 2x">
+                <source media="(max-width: 1178px)" srcset="./img/feedback-amelytab.jpg">
+                <source srcset="./img/feedback-amely.png 1x, ./img/feedback-amely@2x.png 2x">
+                <img src="./img/feedback-amely.png" alt="" class="testimonials__item-img">
+              </picture>
+            </div>
+          </li>
+        </ul>
+        <button type="button" class="testimonials__footer-btn testimonials__main-btn">Leave feedback</button>
+      </div>
+    </section>
+    <section class="animals">
+      <div class="animals__container container">
+        <h2 class="animals__header">Look at this beautiful animals</h2>
+        <div class="animals__container-inner">
+          <ul class="animals__list">
+            <li class="animals__item">
+              <a href="./panda.html" class="animals__link">
+                <p class="animals__description">Pandas</p>
+                <img src="./img/pets-panda.png" alt="" class="animals__img">
+              </a>
+            </li>
+            <li class="animals__item">
+              <a href="./eagle.html" class="animals__link">
+                <p class="animals__description">Eagles</p>
+                <img src="./img/pets-eagle.png" alt="" class="animals__img">
+              </a>
+            </li><li class="animals__item">
+              <a href="./gorilla.html" class="animals__link">
+                <p class="animals__description">Gorillas</p>
+                <img src="./img/pets-gorilla.png" alt="" class="animals__img">
+              </a>
+            </li>
+            
+            <li class="animals__item">
+              <a href="./aligator.html" class="animals__link">
+                <p class="animals__description">Aligators</p>
+                <img src="./img/pets-aligator.png" alt="" class="animals__img">
+              </a>
+            </li>
+            <li class="animals__item">
+              <a href="./missing-page.html" class="animals__link">
+                <p class="animals__description">Elephants</p>
+                <img src="./img/pets-elephant.png" alt="" class="animals__img">
+              </a>
+            </li>
+            <li class="animals__item">
+              <a href="./missing-page.html" class="animals__link">
+                <p class="animals__description">Lemurs</p>
+                <img src="./img/pets-lemurs.png" alt="" class="animals__img">
+              </a>
+            </li>
+            <li class="animals__item">
+              <a href="./panda.html" class="animals__link">
+                <p class="animals__description">Pandas</p>
+                <img src="./img/pets-panda.png" alt="" class="animals__img">
+              </a>
+            </li>
+          </ul>
+          <button class="animals__mob-btn"></button>
+          <div class="animals__btn-container">
+            <button type="button" class="animals__btn"></button>
+            <button type="button" class="animals__btn"></button>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="main-footer">
+    <div class="main-footer__container container">
+      <a href="./index.html" class="main-footer__logo-link">
+        <picture>
+          <source srcset="./img/Logo.svg 1x, ./img/Logo@2x.svg 2x">
+          <img src="./img/Logo.svg" alt="Online Zoo" class="main-footer__logo-img"></picture></a>
+        
+      <nav class="main-footer__nav main-nav">
+        <ul class="main-footer__nav-list main-nav__list">
+          <li class="main-footer__nav-item main-nav__item">
+            <a href="./missing-page.html" class="main-footer__nav-link main-nav__link">
+              About
+            </a>
+          </li>
+          <li class="main-footer__nav-item main-nav__item">
+            <a href="" class="main-footer__nav-link main-nav__link">
+              Map
+          </a>
+          </li>
+          <li class="main-footer__nav-item main-nav__item">
+            <a href="" class="main-footer__nav-link main-nav__link">
+              Zoos
+          </a>
+          </li>
+          <li class="main-footer__nav-item main-nav__item">
+            <a href="" class="main-footer__nav-link main-nav__link">
+              Contact us
+          </a>
+          </li>
+          <li class="main-footer__nav-item main-nav__item">
+            <a href="" class="main-footer__nav-link main-nav__link">
+          Design</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-footer__container-inner">
+        <p class="main-footer__author">Design by Lemeshko Kateryna</p>
+        <p href="" class="main-footer__author-copyright"> ©RSSchool and ©Yem Digital 2021</p>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
 </body>
-<script src="./js/main.js"></script>
 
 </html>

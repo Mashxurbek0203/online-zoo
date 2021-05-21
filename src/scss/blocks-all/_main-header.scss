@@ -23,9 +23,6 @@
 .main-header__container {
   display: flex;
   align-items: center;
-  max-width: 1651px;
-  padding: 20px;
-  margin: 0 auto;
 }
 
 .main-header__inner {
@@ -40,40 +37,7 @@
   align-items: center;
 }
 
-.main-header__nav-list {
-  display: flex;
-  list-style: none;
-}
 
-.main-header__nav-item {
-  margin-right: 52px;
-  position: relative;
-  &:last-child {
-    margin-right: unset;
-  }
-}
-
-.main-header__nav-link {
-  font-size: 18px;
-  line-height: 24px;
-  color: #C5E1E6;
-  text-transform: uppercase;
-  font-family: "Roboto Mono";
-  font-weight: 500;
-}
-
-
-.main-header__nav-item:hover .main-header__nav-link::before {
-  content: '';
-  width: 100%;
-  height: 2px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #C5E1E6;
-  border-radius: 100px;
-  animation: nav-line 0.2s linear; 
-}
 
 .main-header__form {
   display: flex;
@@ -290,7 +254,7 @@
   }
 
   .main-header__nav-item {
-    margin: 0;
+    margin-right: 0 !important;
     margin-bottom: 32px;
   }
 

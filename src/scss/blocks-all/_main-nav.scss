@@ -1,0 +1,35 @@
+.main-nav__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+
+.main-nav__link {
+  font-size: 18px;
+  line-height: 24px;
+  color: #C5E1E6;
+  text-transform: uppercase;
+  font-family: "Roboto Mono";
+  font-weight: 500;
+}
+
+.main-nav__item:hover .main-nav__link::before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #C5E1E6;
+  border-radius: 100px;
+  animation: nav-line 0.2s linear; 
+}
+
+.main-nav__item {
+  margin-right: 52px;
+  position: relative;
+  &:last-child {
+    margin-right: unset;
+  }
+}

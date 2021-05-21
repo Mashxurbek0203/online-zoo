@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.min.css">
+  <title>Not-Found</title>
+</head>
+<body class="body">
+  <header class="main-header">
+    <div class="main-header__container container">
+      <a href="#" class="main-header__logo-link"><img src="./img/Logo.svg" alt="Logo" class="main-header__logo-img"></a>
+      <div class="main-header__inner">
+        <nav class="main-header__nav main-nav">
+          <ul class="main-header__nav-list main-nav__list">
+            <li class="main-header__nav-item main-nav__item"><a href="./missing-page.html"
+                class="main-header__nav-link main-nav__link">About</a></li>
+            <li class="main-header__nav-item main-nav__item"><a href="./map.html"
+                class="main-header__nav-link main-nav__link">Map</a></li>
+            <li class="main-header__nav-item main-nav__item"><a href="#"
+                class="main-header__nav-link main-nav__link">Zoos</a></li>
+            <li class="main-header__nav-item main-nav__item"><a href="#"
+                class="main-header__nav-link main-nav__link">Contact Us</a></li>
+            <li class="main-header__nav-item main-nav__item"><a href="#"
+                class="main-header__nav-link main-nav__link">Design</a></li>
+          </ul>
+        </nav>
+        <form method="GET" class="main-header__form">
+          <input type="text" placeholder="Search..." id="search" class="main-header__search">
+          <label for="search" class="main-header__search-label">
+            <button type="button" class="main-header__search-btn">
+            </button>
+          </label>
+        </form>
+        <button class="main-header__log-in" type="button">Log in</button>
+        <button class="main-header__sign-up" type="button">Sign up</button>
+        <span class="main-header__account-adaptive">My Account</span>
+        <button class="main-header__account-desktop" type="button"></button>
+      </div>
+      <button type="button" class="main-header__burger burger">
+        <span class="visually-hidden">menu</span>
+        <span class="burger__span"></span>
+      </button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="error">
+      <div class="error__container">
+        <div class="error__container-inner">
+          <p class="error__number">404</p>
+          <p class="error__description">Oops, the page you are looking for doesn’t exist.</p>
+        </div>
+        <a href="./index.html" class="error__link">Back home</a>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__container container">
+      <a href="./index.html" class="main-footer__logo-link">
+        <picture>
+          <source srcset="./img/Logo.svg 1x, ./img/Logo@2x.svg 2x">
+          <img src="./img/Logo.svg" alt="Online Zoo" class="main-footer__logo-img"></a>
+        </picture>
+      <nav class="main-footer__nav main-nav">
+        <ul class="main-footer__nav-list main-nav__list">
+          <li class="main-footer__nav-item main-nav__item">
+            <a href="./missing-page.html" class="main-footer__nav-link main-nav__link">
+              About
+            </a>
+          </li>
+          <li class="main-footer__nav-item main-nav__item">
+            <a href="" class="main-footer__nav-link main-nav__link">
+              Map
+          </a>
+          </li>
+          <li class="main-footer__nav-item main-nav__item">
+            <a href="" class="main-footer__nav-link main-nav__link">
+              Zoos
+          </a>
+          </li>
+          <li class="main-footer__nav-item main-nav__item">
+            <a href="" class="main-footer__nav-link main-nav__link">
+              Contact us
+          </a>
+          </li>
+          <li class="main-footer__nav-item main-nav__item">
+            <a href="" class="main-footer__nav-link main-nav__link"
+            >
+          Design</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-footer__container-inner">
+        <p class="main-footer__author">Design by Lemeshko Kateryna</p>
+        <p href="" class="main-footer__author-copyright"> ©RSSchool and ©Yem Digital 2021</p>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </footer>
+</body>
+</html>

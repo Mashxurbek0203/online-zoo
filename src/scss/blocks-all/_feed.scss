@@ -1,6 +1,6 @@
 .feed {
   background: url(../../img/feed-bg.png) no-repeat center center;
-  // transform: matrix(1, 0, 0, 1, 0, 0);
+  margin-bottom: 99px;
 }
 
 .feed__container{
@@ -97,6 +97,7 @@
 @media screen and(max-width: 1611px){
   .feed {
     background:url(../../img/feed-bg.png) no-repeat center;
+    margin-bottom: 50px;
   }
 
   .feed__header-container {
